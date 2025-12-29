@@ -1,7 +1,7 @@
 /* GENERAL */
 
 @import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
 
 * { 
     margin: 0;
@@ -96,4 +96,75 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+}
+
+/* SECTION */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container, #profile, .section__pic-container, #socials-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.profile-pic {
+    border-radius: 200px;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600px;
+}
+
+.section__text p1 {
+    text-align: center;
+}
+
+.section__text p1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
 }
